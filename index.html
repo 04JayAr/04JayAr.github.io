@@ -12,18 +12,81 @@
 <body>
 
 	<section id="top">
-		<header id="home-top">
-			<div class="container">
-				<div class="row">
-					<img class="name" src="images/jay-ar.png">
-					<p class="header-desc">a full stack web developer.</p>
-					<img class="front-end" src="images/front-end.png">
-				</div> <!-- / row -->
-			</div> <!--/ container -->
-		</header>		
+		<div class="container">
+			<div class="row">
+				<img class="name" src="images/jay-ar.png">
+				<p class="header-desc">a full stack web developer.</p>
+				<img class="front-end" src="images/front-end.png">
+			</div> <!-- / row -->
+		</div> <!--/ container -->
 	</section>
 
+	<section id="projects">
+		<div class="container">
+			<div class="row">
+				<h3>Former Projects</h3>
+				<div>
+					<a href="https://www.globe.com.ph/prepaid/gosakto.html" target="_blank"><img class="proj gosakto" src="images/gosakto.jpg"></a>
+					<a href="http://wataf.ph" target="_blank"><img class="proj" src="images/wataf.png"></a>
+				</div>
+			</div> <!-- / row -->
+			<div class="row">
+				<h3>Current Project</h3>
+				<div>
+					<a href="https://www.gmovies.ph" target="_blank"><img class="proj" src="images/gmovies.jpg"></a>
+				</div>
+			</div> <!-- / row -->
+		</div> <!--/ container -->		
+	</section>
+	<section id="skills">
+		<h3 class="mar">Skills</h3>
+		<div id="myCanvasContainer">
+		 <canvas width="500" height="500" id="myCanvas">
+		  <p>Anything in here will be replaced on browsers that support the canvas element</p>
+		  <ul>
+			<li><a href="javascript:void(0)">HTML5</a></li>
+			<li><a href="javascript:void(0)">CSS3</a></li>
+			<li><a href="javascript:void(0)">JavaScript</a></li>
+			<li><a href="javascript:void(0)">jQuery</a></li>
+			<li><a href="javascript:void(0)">Vue</a></li>
+			<li><a href="javascript:void(0)">PHP</a></li>
+			<li><a href="javascript:void(0)">CodeIgniter</a></li>
+			<li><a href="javascript:void(0)">Magento</a></li>
+			<li><a href="javascript:void(0)">Symfony</a></li>
+			<li><a href="javascript:void(0)">Laravel</a></li>
+			<li><a href="javascript:void(0)">SQL</a></li>
+			<li><a href="javascript:void(0)">Saas</a></li>
+			<li><a href="javascript:void(0)">Ajax</a></li>
+			<li><a href="javascript:void(0)">Bootstrap</a></li>
+			<li><a href="javascript:void(0)">Crystal Reports</a></li>
+			<li><a href="javascript:void(0)">Photoshop</a></li>
+			<li><a href="javascript:void(0)">Git</a></li>
+		  </ul>
+		 </canvas>
+		</div>
+		<p class="love">Right now, I'm in love with Vue JavaScript Framework.</p>
+		<img class="vue" src="images/vue.png">	
+	</section>
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script src="js/jquery.tagcanvas.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			if( ! $('#myCanvas').tagcanvas({
+			 textColour : '#000',
+			 textHeight: 20,
+			 outlineThickness : 1,
+			 maxSpeed : 0.1,
+			 depth : 0.75
+			})) {
+			 // TagCanvas failed to load
+			 $('#myCanvasContainer').hide();
+			}
+			// your other jQuery stuff here...
+		});
+	</script>
 
 </body>
 

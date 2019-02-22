@@ -21,7 +21,7 @@ body {
 
 .name {
 	padding-top: 90px;
-	width: 600px;
+	width: 500px;
 }
 
 .header-desc {
@@ -32,6 +32,43 @@ body {
 
 .front-end {
 	padding-bottom: 90px;
-	width: 700px;
+	width: 500px;
 }
 
+#projects {
+	padding-bottom: 90px;
+}
+
+h3 {
+	color: #1e836c;
+    text-align: center;
+    font-size: 3.8em;
+    font-weight: 400;
+}
+
+.proj {
+	width: 230px;
+    height: 400px;
+}
+
+.gosakto {
+	margin-right: 50px;
+}
+
+#skills {
+    background: #c5ded7;
+    padding-top: 10px;
+}
+
+.mar {
+	margin-bottom: 0px;
+}
+
+.love {
+	padding-top: 100px;
+	font-size: 1.5em;
+}
+
+.vue {
+	width: 800px;
+}
